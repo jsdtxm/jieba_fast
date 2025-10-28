@@ -7,13 +7,13 @@ jieba_fast_functions_py3 = Extension('_jieba_fast_functions_py3',
                          sources=['jieba_fast/source/jieba_fast_functions_wrap_py3_wrap.c'],
                            )
 
-setup(name='jieba_fast',
+setup(name='x_jieba_fast',
       version='0.53',
       description='Use C and Swig to Speed up jieba<Chinese Words Segementation Utilities>',
       long_description=LONGDOC,
-      author='Sun, Junyi, deepcs233',
+      author='Sun, Junyi, deepcs233, jsdtxm',
       author_email='shaohao97@gmail.com',
-      url='https://github.com/deepcs233/jieba_fast',
+      url='https://github.com/jsdtxm/jieba_fast',
       license="MIT",
       classifiers=[
         'Intended Audience :: Developers',
