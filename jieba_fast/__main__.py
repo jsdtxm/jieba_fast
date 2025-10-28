@@ -53,8 +53,7 @@ ln = fp.readline()
 while ln:
     l = ln.rstrip('\r\n')
     result = delim.join(cutfunc(ln.rstrip('\r\n'), cutall, hmm))
-    if PY2:
-        result = result.encode(default_encoding)
+
     print(result)
     ln = fp.readline()
 

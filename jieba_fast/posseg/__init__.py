@@ -54,10 +54,7 @@ class pair(object):
         return 'pair(%r, %r)' % (self.word, self.flag)
 
     def __str__(self):
-        if PY2:
-            return self.__unicode__().encode(default_encoding)
-        else:
-            return self.__unicode__()
+        return self.__unicode__()
 
     def __iter__(self):
         return iter((self.word, self.flag))
